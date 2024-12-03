@@ -9,3 +9,8 @@ declare interface FormStartupErrorProps {
     image?: string | null | undefined;
     pitch?: string | null | undefined;
 }
+
+declare interface TopStartupsProps {
+    title: string;
+    select: PostProps[];
+}

@@ -5,19 +5,22 @@ import React from "react";
 import StartupCard from "./startup-card";
 
 const UserStartups = async ({ id }: { id: string }) => {
-    const startups = await client.fetch<PostProps[]>(STARTUPS_BY_AUTHOR_ID_QUERY, { id });
+  const startups = await client.fetch<PostProps[]>(
+    STARTUPS_BY_AUTHOR_ID_QUERY,
+    { id },
+  );
 
-    return (
-        <>
-            {startups.length > 0 ? (
-                startups.map((post: PostProps) => (
-                    <StartupCard key={post._id} post={post as PostProps} />
-                ))
-            ) : (
-                <p className="no-results">No Startups available!</p>
-            )}
-        </>
-    );
+  return (
+    <>
+      {startups.length > 0 ? (
+        startups.map((post: PostProps) => (
+          <StartupCard key={post._id} post={post as PostProps} />
+        ))
+      ) : (
+        <p className="no-results">No Startups available!</p>
+      )}
+    </>
+  );
 };
 
 export default UserStartups;

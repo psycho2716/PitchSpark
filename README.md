@@ -63,34 +63,29 @@ Make sure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/PitchSpark.git
-    cd PitchSpark
-    ```
+   ```bash
+   git clone https://github.com/yourusername/PitchSpark.git
+   cd PitchSpark
+   ```
 2. Install dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 3. Set up environment variables: Create a .env file in the root directory and add:
-    ```
-    MONGO_URI=<your_mongo_db_connection_string>
-    FIREBASE_API_KEY=<your_firebase_api_key>
-    AWS_ACCESS_KEY_ID=<your_aws_access_key>
-    AWS_SECRET_ACCESS_KEY=<your_aws_secret_access_key>
-    AWS_BUCKET_NAME=<your_s3_bucket_name>
-    NEXT_PUBLIC_APP_URL="http://localhost:3000"
-    AUTH_SECRET=<your_auth_secret>
-    AUTH_GITHUB_ID=<your_github_client_id>
-    AUTH_GITHUB_SECRET=<your_github_client_secret>
-    NEXT_PUBLIC_SANITY_PROJECT_ID=<your_sanity_project_id>
-    NEXT_PUBLIC_SANITY_DATASET=<your_sanity_dataset>
-    NEXT_PUBLIC_SANITY_API_VERSION=<your_sanity_api_version>
-    SANITY_WRITE_TOKEN=<your_sanity_write_token>
-    ```
+   ```
+   NEXT_PUBLIC_APP_URL="http://localhost:3000"
+   AUTH_SECRET=<your_auth_secret>
+   AUTH_GITHUB_ID=<your_github_client_id>
+   AUTH_GITHUB_SECRET=<your_github_client_secret>
+   NEXT_PUBLIC_SANITY_PROJECT_ID=<your_sanity_project_id>
+   NEXT_PUBLIC_SANITY_DATASET=<your_sanity_dataset>
+   NEXT_PUBLIC_SANITY_API_VERSION=<your_sanity_api_version>
+   SANITY_WRITE_TOKEN=<your_sanity_write_token>
+   ```
 4. Start the development server:
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 5. Open your browser and navigate to http://localhost:3000.
 
 ---

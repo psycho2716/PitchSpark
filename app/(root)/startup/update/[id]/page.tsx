@@ -24,13 +24,14 @@ async function getStartupDetails(id: string) {
     }
 }
 
-export default async function UpdateStartupPage({ params }: { params: { id: string } }) {
+export default async function UpdateStartupPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
     const session = await auth();
     if (!session?.user) {
         return notFound();
     }
 
-    const startup = await getStartupDetails(params.id);
+    const startup = await getStartupDetails(id);
     if (!startup) {
         return notFound();
     }

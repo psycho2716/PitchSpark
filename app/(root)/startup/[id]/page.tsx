@@ -15,8 +15,8 @@ import { PostProps } from "@/types/type";
 
 const md = markdownit();
 
-const Startup = async ({ params }: { params: { id: string } }) => {
-    const id = await params.id;
+const Startup = async ({ params }: { params: Promise<{ id: string }> }) => {
+    const { id } = await params;
 
     const [{ data: post }, mostViewed] = await Promise.all([
         sanityFetch({ query: STARTUP_BY_ID_QUERY, params: { id } }),

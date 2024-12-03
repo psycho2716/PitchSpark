@@ -1,7 +1,7 @@
 import { defineQuery } from "next-sanity";
 
 export const STARTUPS_QUERY =
-    defineQuery(`*[_type == "startup" && defined(slug.current) && !defined($search) || category match $search || title match $search] | order(_createdAt desc) {
+  defineQuery(`*[_type == "startup" && defined(slug.current) && !defined($search) || category match $search || title match $search] | order(_createdAt desc) {
   _id,
     title,
     slug,
@@ -15,7 +15,8 @@ export const STARTUPS_QUERY =
       image
 }`);
 
-export const STARTUP_BY_ID_QUERY = defineQuery(`*[_type == "startup" && _id == $id][0] {
+export const STARTUP_BY_ID_QUERY =
+  defineQuery(`*[_type == "startup" && _id == $id][0] {
     _id,
       title,
       slug,
@@ -30,12 +31,14 @@ export const STARTUP_BY_ID_QUERY = defineQuery(`*[_type == "startup" && _id == $
         pitch
   }`);
 
-export const STARTUP_VIEWS_QUERY = defineQuery(`*[_type == "startup" && _id == $id][0] {
+export const STARTUP_VIEWS_QUERY =
+  defineQuery(`*[_type == "startup" && _id == $id][0] {
     _id,
     views
   }`);
 
-export const AUTHOR_BY_GITHUB_ID_QUERY = defineQuery(`*[_type == "author" && id == $id][0] {
+export const AUTHOR_BY_GITHUB_ID_QUERY =
+  defineQuery(`*[_type == "author" && id == $id][0] {
     _id,
     name,
     username,
@@ -44,7 +47,8 @@ export const AUTHOR_BY_GITHUB_ID_QUERY = defineQuery(`*[_type == "author" && id 
     bio
   }`);
 
-export const AUTHOR_BY_ID_QUERY = defineQuery(`*[_type == "author" && _id == $id][0] {
+export const AUTHOR_BY_ID_QUERY =
+  defineQuery(`*[_type == "author" && _id == $id][0] {
     _id,
     name,
     username,
@@ -54,7 +58,7 @@ export const AUTHOR_BY_ID_QUERY = defineQuery(`*[_type == "author" && _id == $id
   }`);
 
 export const PLAYLIST_BY_SLUG_QUERY =
-    defineQuery(`*[_type == "playlist" && slug.current == $slug][0]{
+  defineQuery(`*[_type == "playlist" && slug.current == $slug][0]{
   _id,
   title,
   slug,
@@ -79,7 +83,7 @@ export const PLAYLIST_BY_SLUG_QUERY =
 }`);
 
 export const STARTUPS_BY_AUTHOR_ID_QUERY =
-    defineQuery(`*[_type == "startup" && author._ref == $id] | order(_createdAt desc) {
+  defineQuery(`*[_type == "startup" && author._ref == $id] | order(_createdAt desc) {
   _id,
     title,
     slug,

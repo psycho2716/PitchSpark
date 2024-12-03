@@ -11,7 +11,7 @@ const Navbar = async () => {
     return (
         <nav className="flex justify-between items-center px-7 md:px-14 py-5 border-b border-b-gray-200 fixed top-0 w-full z-50 bg-white">
             <Link href="/">
-                <Image src="/logo.png" alt="YC Directory" width={144} height={30} />
+                <Image src="/logo.png" alt="YC Directory" width={100} height={30} />
             </Link>
             <div className="flex items-center gap-x-4">
                 {session?.user ? (
