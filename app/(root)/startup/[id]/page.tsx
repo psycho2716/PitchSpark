@@ -87,7 +87,7 @@ const Startup = async ({ params }: { params: { id: string } }) => {
                 <PlaylistComponent
                     playListTitle={mostViewed?.title}
                     data={mostViewed?.select}
-                    currentStartupId={post._id}
+                    // currentStartupId={post._id}
                 />
             </Suspense>
 

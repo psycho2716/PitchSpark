@@ -5,12 +5,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 const PlaylistComponent = ({
     data,
-    playListTitle,
-    currentStartupId = ""
+    playListTitle
+    // currentStartupId = ""
 }: {
     data: PostProps[];
     playListTitle: string | undefined;
-    currentStartupId?: string;
+    // currentStartupId?: string;
 }) => {
     return (
         <>
