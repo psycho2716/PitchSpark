@@ -34,6 +34,20 @@ Submit your ideas to competitions, get noticed by investors, and climb the leade
 - **Cloud Storage**: AWS S3 for image uploads
 - **Authentication**: Firebase Auth for secure user login and signup
 
+### Additional Libraries and Tools
+
+- **UI Components**: Radix UI (Alert Dialog, Avatar, Dropdown Menu, Slot, Toast)
+- **Markdown**: Markdown-it, @uiw/react-md-editor
+- **Image Handling**: @sanity/image-url
+- **Error Tracking**: @sentry/nextjs
+- **State Management**: clsx, class-variance-authority
+- **Styling**: styled-components, tailwind-merge, tailwindcss-animate
+- **Utilities**: slugify, zod
+- **Sanity**: sanity, sanity-plugin-markdown, next-sanity
+- **TypeScript**: TypeScript, @types for Node, React, and React DOM
+- **Linting**: ESLint, eslint-config-next
+- **Build Tools**: PostCSS, Tailwind CSS
+
 ---
 
 ## 🚀 Getting Started
