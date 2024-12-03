@@ -78,6 +78,14 @@ Make sure you have the following installed:
     AWS_ACCESS_KEY_ID=<your_aws_access_key>
     AWS_SECRET_ACCESS_KEY=<your_aws_secret_access_key>
     AWS_BUCKET_NAME=<your_s3_bucket_name>
+    NEXT_PUBLIC_APP_URL="http://localhost:3000"
+    AUTH_SECRET=<your_auth_secret>
+    AUTH_GITHUB_ID=<your_github_client_id>
+    AUTH_GITHUB_SECRET=<your_github_client_secret>
+    NEXT_PUBLIC_SANITY_PROJECT_ID=<your_sanity_project_id>
+    NEXT_PUBLIC_SANITY_DATASET=<your_sanity_dataset>
+    NEXT_PUBLIC_SANITY_API_VERSION=<your_sanity_api_version>
+    SANITY_WRITE_TOKEN=<your_sanity_write_token>
     ```
 4. Start the development server:
     ```bash
