@@ -1,7 +1,7 @@
 {
     "crons": [
         {
-            "path": "http://localhost:3000/api/cron/update-top-3-startups",
+            "path": "/api/cron/update-top-3-startups",
             "schedule": "0 0 1 * *"
         }
     ]
